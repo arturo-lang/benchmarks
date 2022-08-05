@@ -1,0 +1,25 @@
+{
+    "benchmarks": {
+        "tests/unittests/arturo.data.art": 51.6,
+        "tests/unittests/branching.art": 36.05,
+        "tests/unittests/customtypes.art": 34.2,
+        "tests/unittests/dictionaries.art": 33.21,
+        "tests/unittests/functions.doc.art": 33.55,
+        "tests/unittests/lib.arithmetic.art": 33.13,
+        "tests/unittests/lib.binary.art": 32.61,
+        "tests/unittests/lib.comparison.art": 32.96,
+        "tests/unittests/lib.crypto.art": 32.6,
+        "tests/unittests/lib.iterators.art": 50.82,
+        "tests/unittests/loops.art": 33.86,
+        "tests/unittests/paths.art": 32.79,
+        "tests/unittests/pipes.art": 34.31,
+        "tests/unittests/quantities.art": 32.63,
+        "tests/unittests/scopes.art": 36.12,
+        "tests/unittests/sorting.art": 36.9,
+        "tests/unittests/strings.art": 32.61,
+        "tests/unittests/templates.art": 32.94,
+        "tests/unittests/thickarrowright.art": 36.77,
+        "tests/unittests/values.version.art": 33.08
+    },
+    "total": 712.7400000000001
+}
