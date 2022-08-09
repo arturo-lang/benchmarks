@@ -7,9 +7,9 @@ This repository hosts the main benchmarking tools & data for [**Arturo**](https:
 The main scripts are supposed to run automatically, on a daily basis (23:00 GMT), on a *fresh-spawn/vanilla* DigitalOcean droplet, with Ubuntu 20.04 installed and the following specifications:
 
 - CPU-optimized
-- 2vCPUs
-- 4GB memory
-- 25GB SSD 
+- 2 vCPUs
+- 4 GB memory
+- 25 GB SSD 
 
 All the results will be stored here as well (in the `/results` folder):
 
