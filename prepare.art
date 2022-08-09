@@ -1,7 +1,7 @@
 canExecute?: function [scri][
     scr: extract.filename scri
     if contains? scr "'" -> return false
-    
+
     if sys\release='mini [
         if in? scr [
             "runtime.NumberOutOfPermittedRange"
@@ -69,7 +69,9 @@ prepareCommand: function [str, what][
         str
 ]
 
-micro: prepareCommand (getMicroList "scripts/parsing") 'micro
+micro: prepareCommand (getMicroList "scripts/parsing") ++ 
+                      (getMicroList "scripts/core")
+                      'micro
 macro: prepareCommand (getMacroList "../arturo/tests/unittests") ++
                       (getMacroList "../arturo/examples/rosetta") 
                       'macro
