@@ -1,5 +1,7 @@
 canExecute?: function [scri][
     scr: extract.filename scri
+    if contains? scr "'" -> return false
+    
     if sys\release='mini [
         if in? scr [
             "runtime.NumberOutOfPermittedRange"
