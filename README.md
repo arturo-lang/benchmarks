@@ -13,7 +13,7 @@ The main benchmarking tool orchestrating the whole process is [Hyperfine](https:
 
 All the results will be stored here (in the `/results` folder):
 
-- the **macro**-benchmarks are actually all tests (unit-tests, error-tests & RC examples) normally running as part of our CI workflows 
+- the **macro**-benchmarks are actually all tests (unit-tests & RC examples) normally running as part of our CI workflows 
 - the **micro**-benchmarks are minimal tests, designed solely for benchmarking purposes, in order to isolate and measure specific features of Arturo
 
 The collected data will - soon - be available from within Arturo's main website (pretty much [in the fashion of V lang](https://fast.vlang.io/) - only looking a bit better, I hope... :))
