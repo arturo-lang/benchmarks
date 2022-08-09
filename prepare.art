@@ -68,8 +68,8 @@ prepareCommand: function [str, what][
 ]
 
 micro: prepareCommand (getMicroList "scripts/parsing") 'micro
-macro: prepareCommand (getMacroList "../arturo/tests/unittests") ;++
-                      ;(getMacroList "../arturo/examples/rosetta") 
+macro: prepareCommand (getMacroList "../arturo/tests/unittests") ++
+                      (getMacroList "../arturo/examples/rosetta") 
                       'macro
 
 write "micro.cmd" micro
