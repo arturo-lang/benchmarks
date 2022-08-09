@@ -20,5 +20,5 @@ write "macro.md" cleanupMd read "macro.md"
 rename "micro.md" ~"results/micro/markdown/|dt|.md"
 rename "macro.md" ~"results/macro/markdown/|dt|.md"
 
-delete "micro.lst"
-delete "macro.lst"
+delete "micro.cmd"
+delete "macro.cmd"
