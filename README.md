@@ -9,7 +9,7 @@ The main scripts are supposed to run automatically, on a daily basis (23:00 GMT)
 - 4 GB memory
 - 25 GB SSD 
 
-All the results will be stored here as well (in the `/results` folder):
+All the results will be stored here (in the `/results` folder):
 
 - the **macro**-benchmarks are actually all tests (unit-tests, error-tests and RC examples) normally running as part of our CI workflows 
 - the **micro**-benchmarks are minimal tests, designed solely for benchmarking purposes, in order to isolate and measure specific features of Arturo
