@@ -63,7 +63,8 @@ prepareCommand: function [str, what][
         "--max-runs 3 " ++
         "--ignore-failure " ++
         "--export-json |what|.json " ++
-        "--export-markdown |what|.md "
+        "--export-markdown |what|.md " ++ 
+        str
 ]
 
 micro: prepareCommand (getMicroList "scripts/parsing") 'micro
