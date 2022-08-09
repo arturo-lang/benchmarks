@@ -1,6 +1,6 @@
 # Benchmarks
 
-This repository hosts the main benchmarking tools & data for Arturo itself.
+This repository hosts the main benchmarking tools & data for [**Arturo**](https://github.com/arturo-lang/arturo) itself.
 
 The main scripts are supposed to run automatically, on a daily basis (23:00 GMT), on a fresh-spawn/vanilla DigitalOcean droplet (CPU-optimized: 2vCPUs + 4GB memory + 25GB SSD), with Ubuntu 20.04 installed. 
 
