@@ -1,0 +1,75 @@
+canExecute?: function [scri][
+    scr: extract.filename scri
+    if sys\release='mini [
+        if in? scr [
+            "runtime.NumberOutOfPermittedRange"
+
+            "branching"
+            "sorting"
+
+            "ackermann function"
+            "arbitrary-precision integers - included"
+            "curzon numbers"
+            "iban"
+            "integer overflow"
+            "integer roots"
+            "jacobsthal numbers"
+            "long multiplication"
+            "loops - continue"
+            "lucas-lehmer test"
+            "modular exponentation"
+            "next special primes"
+            "sorting algorithms - cycle sort"
+            "sorting algorithms - pancake sort"
+            "sylvester's sequence"
+            "trigonometric functions"
+            "ultra useful primes"
+            "unicode strings"
+            "wieferich primes"
+            "xml - input"
+        ] -> return false
+    ]
+
+    if sys\release='full [
+        if in? scr [
+            "runtime.IntegerOperationOverflow"
+            "runtime.IntegerParsingOverflow"
+        ] -> return false
+    ]
+
+    return true
+]
+
+getMicroList: function [location][
+    join.with:" " map list location 'item [
+        ii: item
+        ~{"arturo '|ii|'"}
+    ]
+]
+
+getMacroList: function [location][
+    join.with:" " map select sort select list relative location 'loc -> contains? loc ".res" 'll [
+        canExecute? replace ll ".res" ".art"
+    ] 'item [
+        ii: replace item ".res" ".art"
+        ~{"arturo '|ii|'"}
+    ]
+]
+
+prepareCommand: function [str, what][
+    ~"hyperfine " ++ 
+        "--warmup 1 " ++
+        "--time-unit millisecond " ++
+        "--max-runs 3 " ++
+        "--ignore-failure " ++
+        "--export-json |what|.json " ++
+        "--export-markdown |what|.md "
+]
+
+micro: prepareCommand (getMicroList "scripts/parsing") 'micro
+macro: prepareCommand (getMacroList "../arturo/tests/unittests") ;++
+                      ;(getMacroList "../arturo/examples/rosetta") 
+                      'macro
+
+write "micro.cmd" micro
+write "macro.cmd" macro

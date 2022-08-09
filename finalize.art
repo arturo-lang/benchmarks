@@ -1,0 +1,24 @@
+cleanupJson: function [json][
+    replace replace json "arturo '../arturo/" "" {'"} {"}
+]
+
+cleanupMd: function [md][
+    replace replace md "arturo '../arturo/" "" {'`} {`}
+]
+
+dt: (to :string now\day)   ++ "-" ++
+    (to :string now\month) ++ "-" ++
+    (to :string now\year)
+
+write "micro.json" cleanupJson read "micro.json"
+write "macro.json" cleanupJson read "macro.json"
+rename "micro.json" ~"results/micro/json/|dt|.json"
+rename "macro.json" ~"results/macro/json/|dt|.json"
+
+write "micro.md" cleanupMd read "micro.md"
+write "macro.md" cleanupMd read "macro.md"
+rename "micro.md" ~"results/micro/markdown/|dt|.md"
+rename "macro.md" ~"results/macro/markdown/|dt|.md"
+
+delete "micro.lst"
+delete "macro.lst"
