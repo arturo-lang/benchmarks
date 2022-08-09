@@ -62,7 +62,7 @@ prepareCommand: function [str, what][
     ~"hyperfine " ++ 
         "--warmup 1 " ++
         "--time-unit millisecond " ++
-        "--max-runs 3 " ++
+        "--max-runs 4 " ++
         "--ignore-failure " ++
         "--export-json |what|.json " ++
         "--export-markdown |what|.md " ++ 
