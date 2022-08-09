@@ -1,9 +1,9 @@
 cleanupJson: function [json][
-    replace replace json "arturo '../arturo/" "" {'"} {"}
+    replace replace replace json "arturo '" "" "arturo '../arturo/" "" {'"} {"}
 ]
 
 cleanupMd: function [md][
-    replace replace md "arturo '../arturo/" "" {'`} {`}
+    replace replace replace md "arturo '" "" "arturo '../arturo/" "" {'`} {`}
 ]
 
 dt: (to :string now\day)   ++ "-" ++
