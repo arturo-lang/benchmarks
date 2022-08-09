@@ -1,10 +1,18 @@
 # Benchmarks
 
+[![DigitalOcean Referral Badge](https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg)](https://www.digitalocean.com/?refcode=d9efb97aa0f2&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+
 This repository hosts the main benchmarking tools & data for [**Arturo**](https://github.com/arturo-lang/arturo) itself.
 
-The main scripts are supposed to run automatically, on a daily basis (23:00 GMT), on a *fresh-spawn/vanilla* DigitalOcean droplet (CPU-optimized: 2vCPUs + 4GB memory + 25GB SSD), with Ubuntu 20.04 installed. 
+The main scripts are supposed to run automatically, on a daily basis (23:00 GMT), on a *fresh-spawn/vanilla* DigitalOcean droplet, with Ubuntu 20.04 installed and the following specifications:
 
-All the results will be stored here as well (in the `/results` folder)
+- CPU-optimized
+- 2vCPUs
+- 4GB memory
+- 25GB SSD 
+
+All the results will be stored here as well (in the `/results` folder):
+
 - the **macro**-benchmarks are actually all tests (unit-tests, error-tests and RC examples) normally running as part of our CI workflows 
 - the **micro**-benchmarks are minimal tests, designed solely for benchmarking purposes, in order to isolate and measure specific features of Arturo
 
