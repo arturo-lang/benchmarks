@@ -3,6 +3,9 @@ cleanupJson: function [json][
     final: replace final " tests/" " "
     final: replace final "arturo " ""
     final: replace final {\\} ""
+    final: replace final {\\(} "("
+    final: replace final {\\)} ")"
+
     final: replace final ".art" ""
     return final
 ]
@@ -10,11 +13,15 @@ cleanupJson: function [json][
 cleanupMd: function [md][
     final: replace replace replace replace md "arturo '" "" "arturo '../arturo/" "" "../arturo/" "" {'`} {`}
     final: replace final "| Relative |" {|}
-    final: replace final {/\|[^\|]+\|$/} {|}
     final: replace final " tests/" " "
     final: replace final "arturo " ""
     final: replace final "|:---|---:|---:|---:|---:|" "|:---|---:|---:|---:|"
     final: replace final {\ } ""
+    final: replace final {\(} "("
+    final: replace final {\)} ")"
+
+    final: replace final {/\|[\s0-9\.]+\|\n/} "|"++`\n`
+
     final: replace final ".art" ""
     return final
 ]
