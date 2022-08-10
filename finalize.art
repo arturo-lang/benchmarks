@@ -32,13 +32,13 @@ dt: (to :string now\day)   ++ "-" ++
 
 write "micro.json" cleanupJson read "micro.json"
 write "macro.json" cleanupJson read "macro.json"
-rename "micro.json" ~"results/micro/json/|dt|.json"
-rename "macro.json" ~"results/macro/json/|dt|.json"
+rename "micro.json" ~"results/micro/|dt|.json"
+rename "macro.json" ~"results/macro/|dt|.json"
 
 write "micro.md" cleanupMd read "micro.md"
 write "macro.md" cleanupMd read "macro.md"
-rename "micro.md" ~"results/micro/markdown/|dt|.md"
-rename "macro.md" ~"results/macro/markdown/|dt|.md"
+rename "micro.md" ~"results/micro/|dt|.md"
+rename "macro.md" ~"results/macro/|dt|.md"
 
 delete "micro.cmd"
 delete "macro.cmd"
