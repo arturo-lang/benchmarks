@@ -1,6 +1,15 @@
+KeepOnly: []
+if positive? size arg [
+    KeepOnly: split.by:"," arg\0
+]
 canExecute?: function [scri][
     scr: extract.filename scri
-    ;if contains? scr "'" -> return false
+    if positive? size KeepOnly [
+        loop KeepOnly 'ko [
+            if contains? scr ko -> return true
+        ]
+        return false
+    ]
 
     if sys\release='mini [
         if in? scr [
@@ -43,10 +52,14 @@ canExecute?: function [scri][
 ]
 
 getMicroList: function [location][
-    join.with:" " map list location 'item [
+    join.with:" " map select list location 'loc [
+        canExecute? loc
+    ] 'item [
         ii: item
         ii: replace ii "'" {\'}
         ii: replace ii " " {:\ :}
+        ii: replace ii "(" {:\(:}
+        ii: replace ii ")" {:\):}
         ~{"arturo |ii|"}
     ]
 ]
@@ -58,6 +71,8 @@ getMacroList: function [location][
         ii: replace item ".res" ".art"
         ii: replace ii "'" {\'}
         ii: replace ii " " {:\ :}
+        ii: replace ii "(" {:\(:}
+        ii: replace ii ")" {:\):}
         ~{"arturo |ii|"}
     ]
 ]
