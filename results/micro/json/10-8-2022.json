@@ -1,24 +1,242 @@
 {
   "results": [
     {
-      "command": "scripts/parsing/floating_100k.art",
-      "mean": 3.40756903072,
-      "stddev": 0.10092766468749274,
-      "median": 3.3754416262199998,
-      "user": 3.3688773899999997,
-      "system": 0.03692477999999999,
-      "min": 3.32619652472,
-      "max": 3.55319634572,
+      "command": "arturo scripts/parsing/word_100k.art",
+      "mean": 0.06992314984,
+      "stddev": null,
+      "median": 0.06992314984,
+      "user": 0.04139597999999999,
+      "system": 0.024238919999999997,
+      "min": 0.06992314984,
+      "max": 0.06992314984,
       "times": [
-        3.55319634572,
-        3.32619652472,
-        3.3936904707199997,
-        3.35719278172
+        0.06992314984
       ],
       "exit_codes": [
-        0,
-        0,
-        0,
+        0
+      ]
+    },
+    {
+      "command": "arturo scripts/parsing/string_100k.art",
+      "mean": 4.26716465284,
+      "stddev": null,
+      "median": 4.26716465284,
+      "user": 4.20807798,
+      "system": 0.03425792,
+      "min": 4.26716465284,
+      "max": 4.26716465284,
+      "times": [
+        4.26716465284
+      ],
+      "exit_codes": [
+        0
+      ]
+    },
+    {
+      "command": "arturo scripts/parsing/floating_100k.art",
+      "mean": 3.18077934284,
+      "stddev": null,
+      "median": 3.18077934284,
+      "user": 3.0265989799999997,
+      "system": 0.06505592,
+      "min": 3.18077934284,
+      "max": 3.18077934284,
+      "times": [
+        3.18077934284
+      ],
+      "exit_codes": [
+        0
+      ]
+    },
+    {
+      "command": "arturo scripts/parsing/comments_100k.art",
+      "mean": 0.06144187484000001,
+      "stddev": null,
+      "median": 0.06144187484000001,
+      "user": 0.04191498,
+      "system": 0.01643192,
+      "min": 0.06144187484000001,
+      "max": 0.06144187484000001,
+      "times": [
+        0.06144187484000001
+      ],
+      "exit_codes": [
+        0
+      ]
+    },
+    {
+      "command": "arturo scripts/parsing/quantity_40k.art",
+      "mean": 8.84033343084,
+      "stddev": null,
+      "median": 8.84033343084,
+      "user": 8.68758798,
+      "system": 0.06245292,
+      "min": 8.84033343084,
+      "max": 8.84033343084,
+      "times": [
+        8.84033343084
+      ],
+      "exit_codes": [
+        0
+      ]
+    },
+    {
+      "command": "arturo scripts/parsing/literal_100k.art",
+      "mean": 0.06857255784,
+      "stddev": null,
+      "median": 0.06857255784,
+      "user": 0.04096498,
+      "system": 0.024831919999999997,
+      "min": 0.06857255784,
+      "max": 0.06857255784,
+      "times": [
+        0.06857255784
+      ],
+      "exit_codes": [
+        0
+      ]
+    },
+    {
+      "command": "arturo scripts/parsing/integer_100k.art",
+      "mean": 3.37449627784,
+      "stddev": null,
+      "median": 3.37449627784,
+      "user": 3.21100898,
+      "system": 0.056831919999999994,
+      "min": 3.37449627784,
+      "max": 3.37449627784,
+      "times": [
+        3.37449627784
+      ],
+      "exit_codes": [
+        0
+      ]
+    },
+    {
+      "command": "arturo scripts/parsing/type_100k.art",
+      "mean": 0.09419027784,
+      "stddev": null,
+      "median": 0.09419027784,
+      "user": 0.06856598,
+      "system": 0.02360292,
+      "min": 0.09419027784,
+      "max": 0.09419027784,
+      "times": [
+        0.09419027784
+      ],
+      "exit_codes": [
+        0
+      ]
+    },
+    {
+      "command": "arturo scripts/parsing/block_100k.art",
+      "mean": 0.27473911284,
+      "stddev": null,
+      "median": 0.27473911284,
+      "user": 0.21897098,
+      "system": 0.04810291999999999,
+      "min": 0.27473911284,
+      "max": 0.27473911284,
+      "times": [
+        0.27473911284
+      ],
+      "exit_codes": [
+        0
+      ]
+    },
+    {
+      "command": "arturo scripts/parsing/string_curly_100k.artarturo scripts/core/string_append_inplace_100k.art",
+      "mean": 0.016425672840000002,
+      "stddev": null,
+      "median": 0.016425672840000002,
+      "user": 0.01016998,
+      "system": 0.00518992,
+      "min": 0.016425672840000002,
+      "max": 0.016425672840000002,
+      "times": [
+        0.016425672840000002
+      ],
+      "exit_codes": [
+        1
+      ]
+    },
+    {
+      "command": "arturo scripts/core/array_append_inplace_100k.art",
+      "mean": 0.17086816884,
+      "stddev": null,
+      "median": 0.17086816884,
+      "user": 0.11745497999999999,
+      "system": 0.04068392,
+      "min": 0.17086816884,
+      "max": 0.17086816884,
+      "times": [
+        0.17086816884
+      ],
+      "exit_codes": [
+        0
+      ]
+    },
+    {
+      "command": "arturo scripts/core/string_append_40k.art",
+      "mean": 0.6680314998400001,
+      "stddev": null,
+      "median": 0.6680314998400001,
+      "user": 0.59843198,
+      "system": 0.05425492,
+      "min": 0.6680314998400001,
+      "max": 0.6680314998400001,
+      "times": [
+        0.6680314998400001
+      ],
+      "exit_codes": [
+        0
+      ]
+    },
+    {
+      "command": "arturo scripts/core/integer_increment_inplace_100k.art",
+      "mean": 0.07445101784000001,
+      "stddev": null,
+      "median": 0.07445101784000001,
+      "user": 0.04831898,
+      "system": 0.02185392,
+      "min": 0.07445101784000001,
+      "max": 0.07445101784000001,
+      "times": [
+        0.07445101784000001
+      ],
+      "exit_codes": [
+        0
+      ]
+    },
+    {
+      "command": "arturo scripts/core/array_append_40k.art",
+      "mean": 13.731561663839999,
+      "stddev": null,
+      "median": 13.731561663839999,
+      "user": 13.46415998,
+      "system": 0.11627192,
+      "min": 13.731561663839999,
+      "max": 13.731561663839999,
+      "times": [
+        13.731561663839999
+      ],
+      "exit_codes": [
+        0
+      ]
+    },
+    {
+      "command": "arturo scripts/core/integer_increment_40k.art",
+      "mean": 0.08743179184000001,
+      "stddev": null,
+      "median": 0.08743179184000001,
+      "user": 0.06232897999999999,
+      "system": 0.020883919999999997,
+      "min": 0.08743179184000001,
+      "max": 0.08743179184000001,
+      "times": [
+        0.08743179184000001
+      ],
+      "exit_codes": [
         0
       ]
     }
