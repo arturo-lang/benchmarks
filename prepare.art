@@ -76,7 +76,9 @@ prepareCommand: function [str, what][
 ]
 
 micro: prepareCommand (getMicroList "tests/parsing") ++ " " ++
-                      (getMicroList "tests/core")
+                      (getMicroList "tests/core") ++ " " ++ 
+                      (getMicroList "tests/library/collections") ++ " " ++ 
+                      (getMicroList "tests/library/numbers")
                       'micro
 macro: prepareCommand (getMacroList "../arturo/tests/unittests") ++ " " ++
                       (getMacroList "../arturo/examples/rosetta") 
