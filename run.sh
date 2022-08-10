@@ -13,6 +13,6 @@ else
 fi
 
 ./micro.cmd $RUNS
-#./macro.cmd $RUNS
+./macro.cmd $RUNS
 
 arturo finalize.art
