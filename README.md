@@ -22,7 +22,7 @@ The collected data will - soon - be available from within Arturo's main website 
 
 Although the main idea is to be run automatically, via a Cron job on our main server, the benchmarks can be triggered manually.
 
-With **hyperfine** installed, and the two repos (this one and the main Arturo repo) side-by-side (that is: under the exact same parent folder), all we have to do is enter this folder (`/benchmarks`) and run:
+With **hyperfine** and Arturo installed (and globally available in the $PATH), and the two repos (this one and the main Arturo repo) side-by-side (that is: under the exact same parent folder), all we have to do is enter this folder (`/benchmarks`) and run:
 
 ```bash
 ./run.sh <NUMBER_OF_RUNS_PER_BENCHMARK> (*optional)
