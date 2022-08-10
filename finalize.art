@@ -11,6 +11,7 @@ cleanupMd: function [md][
     final: replace final {/\|[^\|]+\|$/} {|}
     final: replace final "tests/" ""
     final: replace final "arturo " ""
+    final: replace final "|:---|---:|---:|---:|---:|" "|:---|---:|---:|---:|"
     return final
 ]
 
