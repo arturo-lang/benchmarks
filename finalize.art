@@ -3,6 +3,7 @@ cleanupJson: function [json][
     final: replace final " tests/" " "
     final: replace final "arturo " ""
     final: replace final {\\} ""
+    final: replace final ".art" ""
     return final
 ]
 
@@ -14,6 +15,7 @@ cleanupMd: function [md][
     final: replace final "arturo " ""
     final: replace final "|:---|---:|---:|---:|---:|" "|:---|---:|---:|---:|"
     final: replace final {\ } ""
+    final: replace final ".art" ""
     return final
 ]
 
