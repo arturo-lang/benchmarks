@@ -18,6 +18,16 @@ All the results will be stored here (in the `/results` folder):
 
 The collected data will - soon - be available from within Arturo's main website (pretty much [in the fashion of V lang](https://fast.vlang.io/) - only looking a bit better, I hope... :))
 
+## To run manually
+
+Although the main idea is to be run automatically, via a Cron job on our main server, the benchmarks can be triggered manually.
+
+With **hyperfine** installed, and the two repos (this one and the main Arturo repo) side-by-side (that is: under the exact same parent folder), all we have to do is enter this folder (`/benchmarks`) and run:
+
+```bash
+./run.sh <NUMBER_OF_RUNS_PER_BENCHMARK> (*optional)
+```
+
 ------
 
 [![DigitalOcean Referral Badge](https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg)](https://www.digitalocean.com/?refcode=d9efb97aa0f2&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
