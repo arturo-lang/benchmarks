@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 
-arturo prepare.art
+if [ -z "$2" ]
+then
+    arturo prepare.art
+else
+    arturo prepare.art $2
+fi
 
 chmod +x micro.cmd
 chmod +x macro.cmd
