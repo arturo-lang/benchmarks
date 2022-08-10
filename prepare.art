@@ -1,6 +1,6 @@
 canExecute?: function [scri][
     scr: extract.filename scri
-    if contains? scr "'" -> return false
+    ;if contains? scr "'" -> return false
 
     if sys\release='mini [
         if in? scr [
@@ -45,7 +45,9 @@ canExecute?: function [scri][
 getMicroList: function [location][
     join.with:" " map list location 'item [
         ii: item
-        ~{"arturo '|ii|'"}
+        ii: replace ii "'" {\'}
+        ii: replace ii " " {:\ :}
+        ~{"arturo |ii|"}
     ]
 ]
 
@@ -54,7 +56,9 @@ getMacroList: function [location][
         canExecute? replace ll ".res" ".art"
     ] 'item [
         ii: replace item ".res" ".art"
-        ~{"arturo '|ii|'"}
+        ii: replace ii "'" {\'}
+        ii: replace ii " " {:\ :}
+        ~{"arturo |ii|"}
     ]
 ]
 
