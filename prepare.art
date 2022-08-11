@@ -90,13 +90,13 @@ prepareCommand: function [str, what][
         str
 ]
 
-micro: prepareCommand (getMicroList "tests/parsing") ++ " " ++
-                      (getMicroList "tests/core") ++ " " ++ 
-                      (getMicroList "tests/library/collections") ++ " " ++ 
-                      (getMicroList "tests/library/numbers")
+micro: prepareCommand (getMicroList "tests/parsing"); ++ " " ++
+                    ;   (getMicroList "tests/core") ++ " " ++ 
+                    ;   (getMicroList "tests/library/collections") ++ " " ++ 
+                    ;   (getMicroList "tests/library/numbers")
                       'micro
-macro: prepareCommand (getMacroList "../arturo/tests/unittests") ++ " " ++
-                      (getMacroList "../arturo/examples/rosetta") 
+macro: prepareCommand (getMacroList "../arturo/tests/unittests"); ++ " " ++
+                      ;(getMacroList "../arturo/examples/rosetta") 
                       'macro
 
 write "micro.cmd" micro
