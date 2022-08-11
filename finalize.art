@@ -40,5 +40,12 @@ write "macro.md" cleanupMd read "macro.md"
 rename "micro.md" ~"results/micro/|dt|.md"
 rename "macro.md" ~"results/macro/|dt|.md"
 
+write.json ~"results/info/|dt|.json" #[
+    filesize: to :integer volume "../arturo/bin/arturo",
+    cloc: read.json execute {!sh 
+        cloc --json --read-lang-def=extra/arturo-cloc.def --exclude-dir=extras ../arturo/src
+    }
+]
+
 delete "micro.cmd"
 delete "macro.cmd"
