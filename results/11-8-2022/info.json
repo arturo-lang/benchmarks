@@ -4,11 +4,11 @@
         "header": {
             "cloc_url": "github.com/AlDanial/cloc",
             "cloc_version": "1.82",
-            "elapsed_seconds": 0.0986869335174561,
+            "elapsed_seconds": 0.137076854705811,
             "n_files": 79,
             "n_lines": 27254,
-            "files_per_second": 800.511244845056,
-            "lines_per_second": 276166.246417812
+            "files_per_second": 576.319030441332,
+            "lines_per_second": 198822.770324659
         },
         "Nim": {
             "nFiles": 74,
@@ -37,12 +37,12 @@
     },
     "totals": {
         "micro": {
-            "time": 7.634812637866667,
-            "tests": 12
+            "time": 134.21283043734,
+            "tests": 39
         },
         "macro": {
-            "time": 3.659686050266666,
-            "tests": 20
+            "time": 241.4831276542332,
+            "tests": 457
         }
     }
 }
