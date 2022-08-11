@@ -32,19 +32,36 @@ dt: (to :string now\day)   ++ "-" ++
 
 write "micro.json" cleanupJson read "micro.json"
 write "macro.json" cleanupJson read "macro.json"
-rename "micro.json" ~"results/micro/|dt|.json"
-rename "macro.json" ~"results/macro/|dt|.json"
+
+Totals: #[]
+micros: get read.json "micro.json" 'results
+Totals\micro: #[
+    time: sum map micros 'mic -> mic\mean
+    tests: size micros
+]
+
+macros: get read.json "macro.json" 'results
+Totals\macro: #[
+    time: sum map macros 'mac -> mac\mean
+    tests: size macros
+]
+
+write.directory ~"results/|dt|"
+
+rename "micro.json" ~"results/|dt|/micro.json"
+rename "macro.json" ~"results/|dt|/macro.json"
 
 write "micro.md" cleanupMd read "micro.md"
 write "macro.md" cleanupMd read "macro.md"
-rename "micro.md" ~"results/micro/|dt|.md"
-rename "macro.md" ~"results/macro/|dt|.md"
+rename "micro.md" ~"results/|dt|/micro.md"
+rename "macro.md" ~"results/|dt|/macro.md"
 
-write.json ~"results/info/|dt|.json" #[
+write.json ~"results/|dt|/info.json" #[
     filesize: to :integer volume "../arturo/bin/arturo",
     cloc: read.json execute {!sh 
         cloc --json --read-lang-def=extra/arturo-cloc.def --exclude-dir=extras ../arturo/src
     }
+    totals: Totals
 ]
 
 delete "micro.cmd"
