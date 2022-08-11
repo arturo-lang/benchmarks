@@ -46,7 +46,10 @@ Totals\macro: #[
     tests: size macros
 ]
 
-write.directory ~"results/|dt|"
+write.directory ~"results/|dt|" ø
+
+; write ~"results/|dt|/micro.art" as.pretty.code read.json "micro.json"
+; write ~"results/|dt|/macro.art" as.pretty.code read.json "macro.json"
 
 rename "micro.json" ~"results/|dt|/micro.json"
 rename "macro.json" ~"results/|dt|/macro.json"
@@ -63,6 +66,8 @@ write.json ~"results/|dt|/info.json" #[
     }
     totals: Totals
 ]
+
+; write ~"results/|dt|/info.art" as.pretty.code read.json ~"results/|dt|/info.json"
 
 delete "micro.cmd"
 delete "macro.cmd"
