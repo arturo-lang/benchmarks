@@ -61,6 +61,9 @@ rename "macro.md" ~"results/|dt|/macro.md"
 
 write.json ~"results/|dt|/info.json" #[
     filesize: to :integer volume "../arturo/bin/arturo",
+    commit: strip execute {!sh
+        cd ../arturo && git rev-parse --short HEAD
+    }
     cloc: read.json execute {!sh 
         cloc --json --read-lang-def=extra/arturo-cloc.def --exclude-dir=extras ../arturo/src
     }
