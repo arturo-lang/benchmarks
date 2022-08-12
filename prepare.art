@@ -80,13 +80,13 @@ getMacroList: function [location][
 prepareCommand: function [str, what][
     "#!/usr/bin/env bash\n\n" ++
     "hyperfine " ++ 
-        "--warmup 1 " ++
+        ;"--warmup 1 " ++
         "--time-unit millisecond " ++
         "--max-runs $1 " ++
         "--ignore-failure " ++
         (~"--export-json |what|.json ") ++
         (~"--export-markdown |what|.md ") ++ 
-        ((sys\os="linux")? ->"--prepare 'sync; echo 3 | sudo tee /proc/sys/vm/drop_caches'" ->"") ++ " " ++
+        ;((sys\os="linux")? ->"--prepare 'sync; echo 3 | sudo tee /proc/sys/vm/drop_caches'" ->"") ++ " " ++
         str
 ]
 
