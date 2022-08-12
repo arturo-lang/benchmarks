@@ -17,9 +17,6 @@ else
     RUNS=$1
 fi
 
-mkdir results/$(date +%-e-%-m-%Y)
-chmod 777 results/$(date +%-e-%-m-%Y)
-
 ./micro.cmd $RUNS
 ./macro.cmd $RUNS
 
