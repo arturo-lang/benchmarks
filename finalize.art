@@ -46,12 +46,12 @@ Totals\macro: #[
     tests: size macros
 ]
 
-write.directory ~"results/|dt|" ø
+;write.directory ~"results/|dt|" ø
 
 ; write ~"results/|dt|/micro.art" as.pretty.code read.json "micro.json"
 ; write ~"results/|dt|/macro.art" as.pretty.code read.json "macro.json"
 
-execute ~"chmod 777 results/|dt|"
+;execute ~"chmod 777 results/|dt|"
 
 rename "micro.json" ~"results/|dt|/micro.json"
 rename "macro.json" ~"results/|dt|/macro.json"
