@@ -2,7 +2,7 @@
 
 This repository hosts the main benchmarking tools & data for [**Arturo**](https://github.com/arturo-lang/arturo) itself.
 
-The main scripts are supposed to run automatically, on a daily basis - @21:00 UTC -, after re-building Arturo's master branch from scratch in *release* mode on a *fresh-spawn/vanilla* DigitalOcean droplet (c-4) with the following specifications:
+The main scripts are supposed to run automatically @ 21:00 UTC, on a daily basis, after re-building Arturo's master branch from scratch in *release* mode on a *fresh-spawn/vanilla* DigitalOcean droplet (c-4) with the following specifications:
 
 - CPU-optimized
 - 4 vCPUs
