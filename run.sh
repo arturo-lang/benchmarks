@@ -17,7 +17,7 @@ else
     RUNS=$1
 fi
 
-# ./micro.cmd $RUNS
-# ./macro.cmd $RUNS
+./micro.cmd $RUNS
+./macro.cmd $RUNS
 
-# arturo finalize.art
+arturo finalize.art
