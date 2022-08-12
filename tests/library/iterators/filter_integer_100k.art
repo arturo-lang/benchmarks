@@ -1,0 +1,3 @@
+X: filter 100000 'x [
+    even? x
+]
