@@ -52,7 +52,7 @@ canExecute?: function [scri][
 ]
 
 getMicroList: function [location][
-    join.with:" " map select list location 'loc [
+    map select list location 'loc [
         canExecute? loc
     ] 'item [
         ii: item
@@ -65,7 +65,7 @@ getMicroList: function [location][
 ]
 
 getMacroList: function [location][
-    join.with:" " map select sort select list relative location 'loc -> contains? loc ".res" 'll [
+    map select sort select list relative location 'loc -> contains? loc ".res" 'll [
         canExecute? replace ll ".res" ".art"
     ] 'item [
         ii: replace item ".res" ".art"
@@ -90,13 +90,18 @@ prepareCommand: function [str, what][
         str
 ]
 
-micro: prepareCommand (getMicroList "tests/parsing") ++ " " ++
-                      (getMicroList "tests/core") ++ " " ++ 
-                      join.with:" " map sort filter list "tests/library" 'l [contains? l "."] => getMicroList
-                      'micro
-macro: prepareCommand (getMacroList "../arturo/tests/unittests") ++ " " ++
-                      (getMacroList "../arturo/examples/rosetta") 
-                      'macro
+micro: prepareCommand 
+    join.with:" " sort
+        (getMicroList "tests/parsing") ++
+        (getMicroList "tests/core") ++
+        flatten map sort filter list "tests/library" 'l [contains? l "."] => getMicroList
+    'micro
+
+macro: prepareCommand 
+    join.with:" " sort
+        (getMacroList "../arturo/tests/unittests") ++
+        (getMacroList "../arturo/examples/rosetta") 
+    'macro
 
 write "micro.cmd" micro
 write "macro.cmd" macro
