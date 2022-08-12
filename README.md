@@ -2,12 +2,12 @@
 
 This repository hosts the main benchmarking tools & data for [**Arturo**](https://github.com/arturo-lang/arturo) itself.
 
-The main scripts are supposed to run automatically, on a daily basis (@21:00 UTC), after re-building Arturo's master branch from scratch in *release* mode on a *fresh-spawn/vanilla* DigitalOcean droplet with the following specifications:
+The main scripts are supposed to run automatically, on a daily basis (@21:00 UTC), after re-building Arturo's master branch from scratch in *release* mode on a *fresh-spawn/vanilla* DigitalOcean c-4 droplet with the following specifications:
 
 - CPU-optimized
-- 2 vCPUs
-- 4 GB memory
-- 25 GB SSD 
+- 4 vCPUs
+- 8 GB memory
+- 50 GB SSD 
 - Ubuntu 20.04
 
 The main benchmarking tool orchestrating the whole process is [Hyperfine](https://github.com/sharkdp/hyperfine).
