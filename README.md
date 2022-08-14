@@ -10,7 +10,7 @@ The main scripts are supposed to run automatically @ 21:00 UTC, on a daily basis
 - 50 GB SSD 
 - Ubuntu 20.04
 
-The main benchmarking tool orchestrating the whole process is [Hyperfine](https://github.com/sharkdp/hyperfine), which is admittedly a... hyper-fine fit for this type of job.
+The main benchmarking tool orchestrating the whole process is [Hyperfine](https://github.com/sharkdp/hyperfine) - which is admittedly a... hyper-fine fit for this type of job.
 
 All the results will be stored here (in the `/results` folder):
 
