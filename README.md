@@ -2,7 +2,7 @@
 
 This repository hosts the main benchmarking tools & data for [**Arturo**](https://github.com/arturo-lang/arturo) itself.
 
-The main scripts are supposed to run automatically @ 21:00 UTC, on a daily basis (if there are new commits to main repo, following the latest benchmarks), after re-building Arturo's master branch from scratch in *release* mode on a *fresh-spawn/vanilla* DigitalOcean droplet (c-4) with the following specifications:
+The main scripts are supposed to run automatically @ 21:00 UTC, on a daily basis (only if there are new commits to the main repo following the latest benchmarks), after re-building Arturo's master branch from scratch in *release* mode on a *fresh-spawn/vanilla* DigitalOcean droplet (c-4) with the following specifications:
 
 - CPU-optimized
 - 4 vCPUs
@@ -21,7 +21,7 @@ The collected data will - soon - be available from within Arturo's main website 
 
 ## To run manually
 
-Although the main idea is to be run automatically, via a Cron job on our main server, the benchmarks can be triggered manually.
+Although the main idea is to run the relevant scripts automatically, via a Cron job on our main server, the benchmarks can be triggered manually.
 
 With **hyperfine** and Arturo installed (and globally available in the $PATH), and the two repos (this one and the main Arturo repo) side-by-side (that is: under the exact same parent folder), all we have to do is enter this folder (`/benchmarks`) and run:
 
