@@ -485,7 +485,7 @@
       ]
     },
     {
-      "command": "library/collections/contains?_array_1m",
+      "command": "library/collections/contains__array_1m",
       "mean": 1.5570438054300002,
       "stddev": 0.0124333573212734,
       "median": 1.5571289786800002,
@@ -507,7 +507,7 @@
       ]
     },
     {
-      "command": "library/collections/contains?_string_1m",
+      "command": "library/collections/contains__string_1m",
       "mean": 1.44517868118,
       "stddev": 0.018468118037234256,
       "median": 1.44453050118,
@@ -683,7 +683,7 @@
       ]
     },
     {
-      "command": "library/comparison/equal?_1m",
+      "command": "library/comparison/equal__1m",
       "mean": 1.6450279926800002,
       "stddev": 0.005610941094349412,
       "median": 1.6463631591800003,
@@ -947,7 +947,7 @@
       ]
     },
     {
-      "command": "library/logic/and?_100k",
+      "command": "library/logic/and__100k",
       "mean": 0.16736220092999998,
       "stddev": 0.0018188293578338308,
       "median": 0.16718594267999998,
@@ -969,7 +969,7 @@
       ]
     },
     {
-      "command": "library/logic/not?_100k",
+      "command": "library/logic/not__100k",
       "mean": 0.13395323242999999,
       "stddev": 0.0007369302373867703,
       "median": 0.13384425568,
@@ -991,7 +991,7 @@
       ]
     },
     {
-      "command": "library/logic/or?_100k",
+      "command": "library/logic/or__100k",
       "mean": 0.16589589192999998,
       "stddev": 0.0022217599786021496,
       "median": 0.16547774718,
@@ -1013,7 +1013,7 @@
       ]
     },
     {
-      "command": "library/logic/xor?_100k",
+      "command": "library/logic/xor__100k",
       "mean": 0.16677168242999998,
       "stddev": 0.0015844728580011204,
       "median": 0.16628706368,
@@ -1035,7 +1035,7 @@
       ]
     },
     {
-      "command": "library/numbers/even?_100k",
+      "command": "library/numbers/even__100k",
       "mean": 0.12916159918,
       "stddev": 0.00191441130742099,
       "median": 0.12895705718,
@@ -1057,7 +1057,7 @@
       ]
     },
     {
-      "command": "library/numbers/prime?_100k",
+      "command": "library/numbers/prime__100k",
       "mean": 2.9606139866800003,
       "stddev": 0.014766759403662228,
       "median": 2.95443023268,
