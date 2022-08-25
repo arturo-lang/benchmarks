@@ -1,6 +1,7 @@
 {
     "filesize": 8297008,
     "commit": "615875c80",
+    "description": "after disabling global --overflowChecks:on",
     "cloc": {
         "header": {
             "cloc_url": "github.com/AlDanial/cloc",
