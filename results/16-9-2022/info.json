@@ -1,0 +1,49 @@
+{
+    "filesize": 8344208,
+    "commit": "c19fb3f17",
+    "cloc": {
+        "header": {
+            "cloc_url": "github.com/AlDanial/cloc",
+            "cloc_version": "1.82",
+            "elapsed_seconds": 0.0877439975738525,
+            "n_files": 81,
+            "n_lines": 28507,
+            "files_per_second": 923.140069288771,
+            "lines_per_second": 324888.320434753
+        },
+        "Nim": {
+            "nFiles": 76,
+            "blank": 3507,
+            "comment": 6756,
+            "code": 17708
+        },
+        "Arturo": {
+            "nFiles": 4,
+            "blank": 95,
+            "comment": 47,
+            "code": 361
+        },
+        "JavaScript": {
+            "nFiles": 1,
+            "blank": 3,
+            "comment": 8,
+            "code": 22
+        },
+        "SUM": {
+            "blank": 3605,
+            "comment": 6811,
+            "code": 18091,
+            "nFiles": 81
+        }
+    },
+    "totals": {
+        "micro": {
+            "time": 108.3595721548099,
+            "tests": 74
+        },
+        "macro": {
+            "time": 90.33413105804,
+            "tests": 457
+        }
+    }
+}
