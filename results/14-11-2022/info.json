@@ -1,0 +1,49 @@
+{
+    "filesize": 6258824,
+    "commit": "d65edad02",
+    "cloc": {
+        "header": {
+            "cloc_url": "github.com/AlDanial/cloc",
+            "cloc_version": "1.82",
+            "elapsed_seconds": 0.08654284477233889,
+            "n_files": 88,
+            "n_lines": 30254,
+            "files_per_second": 1016.83738536091,
+            "lines_per_second": 349584.071098965
+        },
+        "Nim": {
+            "nFiles": 83,
+            "blank": 3811,
+            "comment": 9379,
+            "code": 16528
+        },
+        "Arturo": {
+            "nFiles": 4,
+            "blank": 95,
+            "comment": 47,
+            "code": 361
+        },
+        "JavaScript": {
+            "nFiles": 1,
+            "blank": 3,
+            "comment": 8,
+            "code": 22
+        },
+        "SUM": {
+            "blank": 3909,
+            "comment": 9434,
+            "code": 16911,
+            "nFiles": 88
+        }
+    },
+    "totals": {
+        "micro": {
+            "time": 45.32188756359623,
+            "tests": 74
+        },
+        "macro": {
+            "time": 16.29562443650297,
+            "tests": 459
+        }
+    }
+}
